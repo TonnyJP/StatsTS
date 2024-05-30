@@ -3,6 +3,5 @@ export const dateStringToDate = (dateString: string): Date => {
     .split("/")
     .map((datePart: string): number => parseInt(datePart));
 
-  // console.log(dateParts);
   return new Date(dateParts[2], dateParts[1] - 1, dateParts[0]);
 };
